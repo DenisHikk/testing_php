@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Test</title>
+</head>
+<body>
+    
+    <div class="container-full">
+        <div class="container">
+            <form class="container-form" id="sessionId" enctype="text/plain">
+                <label for="userId">Введите userId</label>
+                <input type="number" id="userId">
+                <button class="submit-btn" type="submit">Установить userId</button>
+            </form>
+        </div>
+        <div class="container">
+            <form id="formElem" class="container-form" enctype="multipart/form-data">
+                <label for="fileCSV">Выберите файл csv</label>
+                <input type="file" id="fileCSV" accept=".csv">
+                <button class="submit-btn" type="submit" id="submitBtn">Отправить</button>
+            </form>
+        </div>
+        <div class="container">
+            <form id="formExport" class="container-form" enctype="multipart/form-data">
+                <label>Экспорт в файл из бд</label>
+                <button class="submit-btn" type="submit" id="submitBtn">Получить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script/jqurey.js"></script>
+    <script src="script/index.js"></script>
+</body>
+</html>

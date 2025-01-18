@@ -1,0 +1,59 @@
+
+.container-full {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border: 3px solid #4e4e4e;
+    border-radius: 13px;
+    padding: 2%;
+    box-shadow: 2px 2px 2px 2px #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container {
+    border: 3px solid #4e4e4e;
+    border-radius: 13px;
+    padding: 10%;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.submit-btn {
+    height: 50px;
+    width: 200px;
+    border: 2px solid #2a2a2a;
+    border-radius: 13px;
+    background-color: #424242;
+    color: white;
+}
+
+.popupc {
+    display: none; /* Скрыть поп-ап по умолчанию */
+    position: fixed;
+    top: -100px; /* Начальная позиция за экраном */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    color: white;
+    background-color: #424242;
+    border: 2px solid #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    opacity: 0; /* Начальная непрозрачность */
+    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Плавная анимация */
+}
+
+.popup-content {
+    position: relative;
+}
